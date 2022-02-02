@@ -5,11 +5,11 @@ function Actors(){
   return <div>
     <h1>Actors Page</h1>
     {actors.map((actor) => (
-      <div key={actor} >
+      <div key={actor.name} >
         Name: {actor.name}
-        <ul key={{actor} + "movie list"} >Movies they worked on:
+        <ul>Movies they worked on:
           {actor.movies.map((movie) => (
-            <li key={{actor} + {movie}} >{movie}</li>
+            <li key={movie} >{movie}</li>
           ))}
         </ul>
       </div>

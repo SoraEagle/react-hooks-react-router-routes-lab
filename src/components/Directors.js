@@ -5,11 +5,11 @@ function Directors(){
   return <div>
     <h1>Directors Page</h1>
     {directors.map((director) => (
-      <div key={director} >
+      <div key={director.name} >
         Name: {director.name}
-        <ul key={{director} + "movies list"} >Movies they worked on: 
+        <ul >Movies they worked on: 
           {director.movies.map((movie) => (
-            <li key={"director" + {movie}}>{movie}</li>
+            <li key={movie}>{movie}</li>
           ))}
         </ul>
       </div>
