@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const linkStyles = {
   display: "inline-block",
@@ -12,26 +12,26 @@ const linkStyles = {
 };
 
 function NavBar(){
-  return <div>
+  return <div className="navbar">
      <NavLink to="/" exact
         style={linkStyles} activeStyle={{
           background: "darkblue",
         }} >
         Home
       </NavLink>
-    <NavLink to="/movies"
+    <NavLink to="/movies" exact
     style={linkStyles} activeStyle={{
           background: "darkblue",
         }} >
           Movies
         </NavLink>
-    <NavLink to="/directors"
+    <NavLink to="/directors" exact
     style={linkStyles} activeStyle={{
       background: "darkblue",
     }} >
       Directors
     </NavLink>
-    <NavLink to="/actors"
+    <NavLink to="/actors" exact
     style={linkStyles} activeStyle={{
       background: "darkblue",
     }} >
